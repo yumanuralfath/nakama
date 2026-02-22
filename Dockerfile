@@ -10,7 +10,8 @@ exec /nakama/nakama \
   --name nakama1 \
   --database.address $DATABASE_URL \
   --logger.level INFO \
-  --session.token_expiry_sec 7200 \
+  --session.token_expiry_sec $SESSION_TOKEN_EXPIRY_SEC \
+  --session.refresh_token_expiry_sec $SESSION_REFRESH_TOKEN_EXPIRY_SEC \
   --session.encryption_key $SESSION_ENCRYPTION_KEY \
   --session.refresh_encryption_key $SESSION_REFRESH_ENCRYPTION_KEY \
   --socket.server_key $SOCKET_SERVER_KEY \
